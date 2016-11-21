@@ -1,0 +1,156 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and
+# provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product:
+  folders:
+
+  - title: Get Started
+    heading: QuickStart
+    url: /guides/get-started
+    output: web
+
+  - title: Write an Angular App
+    heading: Libraries
+    url: /codelabs/ng2
+    output: web
+
+  - title: Quickstart
+    heading: Angular Docs
+    url: /angular/quickstart
+    output: web
+
+  - title: Tutorial
+    output: web
+    folderitems:
+
+      - title: Introduction
+        url: /angular/tutorial
+        output: web
+
+      - title: 1. The Hero Editor
+        url: /angular/tutorial/toh-pt1
+        output: web
+
+      - title: 2. Master/Detail
+        url: /angular/tutorial/toh-pt2
+        output: web
+
+      - title: 3. Multiple Components
+        url: /angular/tutorial/toh-pt3
+        output: web
+
+      - title: 4. Services
+        url: /angular/tutorial/toh-pt4
+        output: web
+
+      - title: 5. Routing
+        url: /angular/tutorial/toh-pt5
+        output: web
+
+      - title: 6. HTTP
+        url: /angular/tutorial/toh-pt6
+        output: web
+
+  - title: Guide
+    output: web
+    folderitems:
+
+      - title: 1. Overview
+        url: /angular/guide
+        output: web
+
+      - title: 2. Architecture
+        url: /angular/guide/architecture
+        output: web
+
+      - title: 3. Displaying Data
+        url: /angular/guide/displaying-data
+        output: web
+
+      - title: 4. User Input
+        url: /angular/guide/user-input
+        output: web
+
+      - title: 5. Forms
+        url: /angular/guide/forms
+        output: web
+
+      - title: 6. Dependency Injection
+        url: /angular/guide/dependency-injection
+        output: web
+
+      - title: 7. Template Syntax
+        url: /angular/guide/template-syntax
+        output: web
+
+      - title: 8. Style Guide
+        url: /angular/guide/style-guide
+        output: web
+
+  - title: Advanced
+    output: web
+    folderitems:
+
+      - title: Attribute Directives
+        url: /angular/guide/attribute-directives
+        output: web
+
+      - title: Component Styles
+        url: /angular/guide/component-styles
+        output: web
+
+      - title: Hierarchical Injectors
+        url: /angular/guide/hierarchical-dependency-injection
+        output: web
+
+      - title: HTTP Client
+        url: /angular/guide/server-communication
+        output: web
+
+      - title: Lifecycle Hooks
+        url: /angular/guide/lifecycle-hooks
+        output: web
+
+      - title: Pipes
+        url: /angular/guide/pipes
+        output: web
+
+  - title: API Reference
+    url: /angular/api
+    output: web
+
+  - title: Cheat Sheet
+    url: /angular/cheatsheet
+    output: web
+
+  - title: Glossary
+    url: /angular/glossary
+    output: web
+
+
+  - title: Overview
+    heading: Libraries
+    url: /guides/web-programming
+    output: web
+
+  - title: Dart Tools for the Web
+    heading: Tools
+    url: /tools
+    output: web
+
+  - heading: Community
+    title: Community and Support
+    url: /community
+    output: web
+
+  - heading: Tutorials
+    title: Overview
+    url: /tutorials
+    output: web
+
+  - heading: Articles
+    title: Overview
+    url: /articles
+    output: web

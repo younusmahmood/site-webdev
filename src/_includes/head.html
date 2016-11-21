@@ -42,7 +42,6 @@
       application programming, not page scripting.
    -->
   {% javascript main %}
-  {% javascript 'vendor/document-register-elements' %}
 
   {% for js in page.js %}
   <script {% if js.defer %}defer{% endif %} src="{{ js.url }}"></script>

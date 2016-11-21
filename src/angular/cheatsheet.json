@@ -8,13 +8,13 @@
     "prerelease": [
       "local"
     ],
-    "build": "sha.1c2d14a",
+    "build": "sha.fc303c0",
     "version": "2.0.1-local",
     "codeName": "snapshot",
     "isSnapshot": true,
-    "full": "2.0.1-local+sha.1c2d14a",
+    "full": "2.0.1-local+sha.fc303c0",
     "branch": "master",
-    "commitSHA": "1c2d14a8b8f5e9fa1a95baa0fe1c85b9c084456a"
+    "commitSHA": "fc303c0697b2ebe36fc58a427ab0b2ccef21814f"
   },
   "sections": [
     {
