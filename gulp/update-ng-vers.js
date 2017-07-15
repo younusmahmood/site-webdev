@@ -31,6 +31,11 @@ module.exports = function (gulp, plugins, config) {
   const NG_VERS = `^${process.env.NG_RELEASE}`;
   const NG_TEST_VERS = `^${process.env.NG_TEST_RELEASE}`;
 
+  console.log('Repo versions (from env. vars):')
+  console.log(`  ACX_VERS ${ACX_VERS}`)
+  console.log(`  NG_VERS  ${NG_VERS}`)
+  console.log(`  NG_TEST_VERS ${NG_TEST_VERS}`)
+
   const depOvr = 'dependency_overrides:\n' +
     '  angular:\n' +
     '    git: https://github.com/dart-lang/angular.git\n';
@@ -51,7 +56,7 @@ module.exports = function (gulp, plugins, config) {
       `${baseDir}/**/pubspec.yaml`,
       `!${baseDir}/**/.pub/**`,
     ]) // , { base: baseDir }
-      .pipe(replace(/(^\s+angular?_components:) \S+$/m, `$1 ${ACX_VERS}`))
+      .pipe(replace(/(^\s+angular_components:)\s+\S+$/m, `$1 ${ACX_VERS}`))
       .pipe(gulp.dest(baseDir));
   });
 
@@ -61,8 +66,9 @@ module.exports = function (gulp, plugins, config) {
       `${baseDir}/**/pubspec.yaml`,
       `!${baseDir}/**/.pub/**`,
     ]) // , { base: baseDir }
-      .pipe(replace(/(^\s+angular:) \S+$/m, `$1 ${NG_VERS}`))
-      .pipe(replace(/(^\s+angular_test:) \S+$/m, `$1 ${NG_TEST_VERS}`))
+      .pipe(replace(/(^\s+angular)2?:\s+\S+$/m, `$1: ${NG_VERS}`))
+      .pipe(replace(/(^\s+angular_test:)\s+\S+$/m, `$1 ${NG_TEST_VERS}`))
+      .pipe(replace(/- angular2(:|\/transform)/, '- angular$1'))
       .pipe(gulp.dest(baseDir));
   });
 

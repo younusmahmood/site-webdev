@@ -3,7 +3,7 @@
 <tr>
   <th>Routing and navigation</th>
   <th markdown="1">
-  `import 'package:angular2/router.dart';`
+  `import 'package:angular/router.dart';`
   </th>
 </tr>
 

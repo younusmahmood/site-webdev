@@ -64,7 +64,7 @@ Start writing the `HeroDetailComponent` as follows:
 
 <?code-excerpt "lib/src/hero_detail_component.dart (initial version)" region="v1" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   @Component(
     selector: 'hero-detail',
@@ -176,7 +176,7 @@ Here's the complete `HeroDetailComponent`.
 
 <?code-excerpt "lib/src/hero_detail_component.dart" title linenums?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   import 'hero.dart';
 

@@ -3,7 +3,7 @@
 <tr>
   <th>Core directives</th>
   <th markdown="1">
-  `import 'package:angular2/angular2.dart';`
+  `import 'package:angular/angular.dart';`
   Available from [CORE_DIRECTIVES](/angular/api/angular.common/CORE_DIRECTIVES-constant)
   </th>
 </tr>

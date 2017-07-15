@@ -102,12 +102,12 @@ For details, see [Set the *base href*](router/1#base-href).
 ### Router import
 
 The Angular router is not part of the Angular core.
-It is an optional service packaged within its own library, `angular2.router`.
+It is an optional service packaged within its own library, `angular.router`.
 Import it like any other package.
 
 <?code-excerpt "lib/app_component_1.dart (import)"?>
 ```
-  import 'package:angular2/router.dart';
+  import 'package:angular/router.dart';
 ```
 
 ### Configuration

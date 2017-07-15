@@ -138,7 +138,7 @@ Create the following file with the given content:
 
 <?code-excerpt "lib/src/hero_form_component.dart (v1)" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   import 'hero.dart';
 
@@ -192,7 +192,7 @@ Replace the contents of the starter app version with the following:
 
 <?code-excerpt "lib/app_component.dart" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   import 'src/hero_form_component.dart';
 

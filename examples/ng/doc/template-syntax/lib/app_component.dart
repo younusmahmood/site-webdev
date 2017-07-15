@@ -1,7 +1,7 @@
 // #docregion
 import 'dart:html';
 
-import 'package:angular2/angular2.dart';
+import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 
 import 'src/hero.dart';

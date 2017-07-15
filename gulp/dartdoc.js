@@ -11,7 +11,8 @@ module.exports = function (gulp, plugins, config) {
   const libsToDoc = {
     acx: `angular_components`,
     ng:
-     `angular.compiler
+     `angular.common
+      angular.compiler
       angular.core
       angular.platform.browser
       angular.platform.common

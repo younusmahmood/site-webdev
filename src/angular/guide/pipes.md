@@ -38,7 +38,7 @@ a human-friendly date.
 
 <?code-excerpt "lib/src/hero_birthday1_component.dart" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   @Component(
     selector: 'hero-birthday',
@@ -176,7 +176,7 @@ Here's a custom pipe named `ExponentialStrengthPipe` that can boost a hero's pow
 <?code-excerpt "lib/src/exponential_strength_pipe.dart" title?>
 ```
   import 'dart:math' as math;
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   /*
    * Raise the value exponentially
@@ -218,7 +218,7 @@ Now you need a component to demonstrate the pipe.
 
 <?code-excerpt "lib/src/power_booster_component.dart" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
   import 'exponential_strength_pipe.dart';
 
   @Component(
@@ -257,7 +257,7 @@ your pipe and two-way data binding with `ngModel`.
 
 <?code-excerpt "lib/src/power_boost_calculator_component.dart" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
   import 'exponential_strength_pipe.dart';
 
   @Component(
@@ -351,7 +351,7 @@ Here's the `FlyingHeroesPipe` implementation, which follows the pattern for cust
 
 <?code-excerpt "lib/src/flying_heroes_pipe.dart (pure)" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
   import 'heroes.dart';
 
   @Pipe('flyingHeroes')
@@ -508,7 +508,7 @@ This next example binds an `Stream` of message strings
 ```
   import 'dart:async';
 
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   @Component(
     selector: 'hero-message',
@@ -562,7 +562,7 @@ The code<span if-docs="ts"> uses the [Angular http](server-communication.html) c
   import 'dart:convert';
   import 'dart:html';
 
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   @Pipe('fetch', pure: false)
   class FetchJsonPipe extends PipeTransform {
@@ -587,7 +587,7 @@ both requesting the heroes from the `heroes.json` file.
 
 <?code-excerpt "lib/src/hero_list_component.dart" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   import 'fetch_json_pipe.dart';
 

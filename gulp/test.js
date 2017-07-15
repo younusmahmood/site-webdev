@@ -13,15 +13,17 @@ module.exports = function (gulp, plugins, config) {
   const wc = process.env.WEB_COMPILER || 'dart2js'; // vs 'dartdevc'
   const runAngularTest = 'pub run angular_test'
     + ` --serve-arg=--web-compiler=${wc}`
-    + ' --test-arg=--platform=content-shell';
+    + ' --test-arg=--platform=content-shell --test-arg=--tags=aot'
+    + ' --test-arg=--reporter=expanded';
 
-  const pathOfExamplesToTest = ('quickstart template-syntax '
+  const pathOfExamplesToTest = ('quickstart '
     + 'toh-0 toh-1 toh-2 toh-3 toh-4 toh-5 toh-6').split(' ')
     .map(name => path.join('ng', 'doc', name))
     .concat(path.join('ng_test', 'github_issues'))
     .filter(name => !argv.filter || name.match(new RegExp(argv.filter)));
 
-  const testStatus = { passed: [], failed: [], skipped: [] };
+  // TEMPORARY: skip template-syntax until ACX supports NG 4
+  const testStatus = { passed: [], failed: [], skipped: ['template-syntax'] };
 
   gulp.task('test', ['_test'], (cb) => {
     plugins.gutil.log(`Passed:\n  ${testStatus.passed.join('\n  ')}\n`);

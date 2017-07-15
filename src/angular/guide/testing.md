@@ -79,7 +79,7 @@ are under **`dev_dependencies`**:
 <?code-excerpt "pubspec.yaml (dev_dependencies)" title?>
 ```
   dev_dependencies:
-    angular_test: ^1.0.0-beta+2
+    angular_test: ^1.0.0-beta+4
     browser: ^0.10.0
     dart_to_js_script_rewriter: ^1.0.1
     test: ^0.12.21
@@ -95,9 +95,9 @@ Without these, `angular_test`-based tests won't run.
 <?code-excerpt "pubspec.yaml (transformers)" title?>
 ```
   transformers:
-  - angular2:
+  - angular:
       entry_points: web/main.dart
-  - angular2/transform/reflection_remover:
+  - angular/transform/reflection_remover:
       $include: test/**_test.dart
   - test/pub_serve:
       $include: test/**_test.dart

@@ -5,7 +5,7 @@ description: The AngularDart versions that this documentation and its examples u
 ---
 This site's documentation and examples reflect
 the **latest stable release** of the
-[angular2](https://pub.dartlang.org/packages/angular2) and
+[angular](https://pub.dartlang.org/packages/angular) and
 [angular_components](https://pub.dartlang.org/packages/angular_components)
 packages. These packages often have a more recent development _(dev)_ release.
 
@@ -25,9 +25,9 @@ packages. These packages often have a more recent development _(dev)_ release.
     </td>
     <td>
       <div>
-        <a href="https://pub.dartlang.org/packages/angular2/versions/{{site.ng.vers.full}}#pub-pkg-tab-changelog"
+        <a href="https://pub.dartlang.org/packages/angular/versions/{{site.ng.vers.full}}#pub-pkg-tab-changelog"
           class="no-automatic-external">
-          angular2 <b>{{site.ng.vers.full}}</b>
+          angular <b>{{site.ng.vers.full}}</b>
         </a>
       </div>
       <div>

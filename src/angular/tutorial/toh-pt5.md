@@ -126,7 +126,7 @@ The first draft looks like this:
 
 <?code-excerpt "lib/app_component_1.dart (v1)" region="" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   import 'src/hero_service.dart';
   import 'src/heroes_component.dart';
@@ -159,7 +159,7 @@ the router library:
 
 <?code-excerpt "lib/app_component.dart (router imports)" region="import-router" title?>
 ```
-  import 'package:angular2/router.dart';
+  import 'package:angular/router.dart';
 ```
 
 ### Make the router available
@@ -292,8 +292,8 @@ and the list of heroes displays.
 
 <?code-excerpt "lib/app_component_1.dart (v2)" title?>
 ```
-  import 'package:angular2/angular2.dart';
-  import 'package:angular2/router.dart';
+  import 'package:angular/angular.dart';
+  import 'package:angular/router.dart';
 
   import 'src/hero_service.dart';
   import 'src/heroes_component.dart';
@@ -325,7 +325,7 @@ To add another view, create a placeholder `DashboardComponent`, which users can 
 
 <?code-excerpt "lib/src/dashboard_component_1.dart (v1)" region="" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   @Component(
     selector: 'my-dashboard',
@@ -440,8 +440,8 @@ In `dashboard_component.dart`, add the following `import` statements.
 ```
   import 'dart:async';
 
-  import 'package:angular2/angular2.dart';
-  import 'package:angular2/router.dart';
+  import 'package:angular/angular.dart';
+  import 'package:angular/router.dart';
 
   import 'hero.dart';
   import 'hero_service.dart';
@@ -544,7 +544,7 @@ Here's what the `HeroDetailComponent` looks like now:
 
 <?code-excerpt "../toh-4/lib/src/hero_detail_component.dart" region="" title="lib/src/hero_detail_component.dart (current)" linenums?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   import 'hero.dart';
 
@@ -581,8 +581,8 @@ Add the following imports:
 ```
   import 'dart:async';
 
-  import 'package:angular2/router.dart';
-  import 'package:angular2/platform/common.dart';
+  import 'package:angular/router.dart';
+  import 'package:angular/platform/common.dart';
 
   import 'hero_service.dart';
 ```

@@ -15,7 +15,7 @@ module.exports = function packageInfo() {
   const info = {
     version: _get(pubspec, 'version'),
     repository: {
-      type: 'git', //? 'pub' @ 'https://pub.dartlang.org/packages/angular2'
+      type: 'git', //? 'pub' @ 'https://pub.dartlang.org/packages/angular'
       // Not sure `url has a user visible impact on the generated cheatsheet. 
       url: 'https://github.com/angular/angular.git', 
     }

@@ -3,7 +3,7 @@
 <tr>
   <th>Forms</th>
   <th markdown="1">
-  `import 'package:angular2/angular2.dart';`
+  `import 'package:angular/angular.dart';`
   Available from [COMMON_DIRECTIVES](/angular/api/angular.common/COMMON_DIRECTIVES-constant) or
   [FORM_DIRECTIVES](/angular/api/angular.common/FORM_DIRECTIVES-constant) 
   </th>

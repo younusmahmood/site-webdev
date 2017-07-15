@@ -8,7 +8,7 @@ var cheatsheetPackage = require('../cheatsheet-package');
 var PROJECT_PATH = path.resolve(__dirname, "../../..");
 var PUBLIC_PATH = path.resolve(PROJECT_PATH, 'public');
 var DOCS_PATH = path.resolve(PUBLIC_PATH, 'docs');
-var ANGULAR2_DOCS_PATH = path.resolve(__dirname, '../../../../angular/modules/@angular/docs');
+var ANGULAR_DOCS_PATH = path.resolve(__dirname, '../../../../angular/modules/@angular/docs');
 
 
 module.exports = new Package('angular.io', [basePackage, targetPackage, cheatsheetPackage])
@@ -77,8 +77,8 @@ module.exports = new Package('angular.io', [basePackage, targetPackage, cheatshe
 
   readFilesProcessor.basePath = DOCS_PATH;
   readFilesProcessor.sourceFiles = [{
-    basePath: ANGULAR2_DOCS_PATH,
-    include: path.resolve(ANGULAR2_DOCS_PATH, 'cheatsheet/*.md')
+    basePath: ANGULAR_DOCS_PATH,
+    include: path.resolve(ANGULAR_DOCS_PATH, 'cheatsheet/*.md')
   }];
 })
 

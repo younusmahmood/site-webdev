@@ -1,8 +1,7 @@
 // #docregion
 import 'dart:html';
-import 'package:angular2/angular2.dart';
-import 'package:angular2/platform/browser.dart';
 
+import 'package:angular/angular.dart';
 import 'package:structural_directives/app_component.dart';
 
 void main() {

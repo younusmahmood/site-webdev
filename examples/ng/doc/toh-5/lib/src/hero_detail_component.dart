@@ -4,10 +4,10 @@
 import 'dart:async';
 
 // #enddocregion added-imports
-import 'package:angular2/angular2.dart';
+import 'package:angular/angular.dart';
 // #docregion added-imports
-import 'package:angular2/router.dart';
-import 'package:angular2/platform/common.dart';
+import 'package:angular/router.dart';
+import 'package:angular/platform/common.dart';
 
 // #enddocregion added-imports
 import 'hero.dart';

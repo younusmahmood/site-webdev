@@ -11,9 +11,8 @@ else
   echo GETTING Angular from GitHub ...
   set -x
   git clone https://github.com/dart-lang/angular.git $NG_REPO
-  # FIXME: temporary, until 3.2.0-alpha or later comes out: stay on HEAD
-  # git -C $NG_REPO fetch origin refs/tags/$NG_RELEASE
-  # git -C $NG_REPO checkout tags/$NG_RELEASE -b $NG_RELEASE
+  git -C $NG_REPO fetch origin refs/tags/$NG_RELEASE
+  git -C $NG_REPO checkout tags/$NG_RELEASE -b $NG_RELEASE
   set +x
   travis_fold end get_repos_ng
 fi

@@ -27,7 +27,7 @@ nextpage:
 AngularDart (which we usually call simply Angular in this documentation)
 is a framework for building client applications in HTML and Dart.
 It is published as the
-[**angular2**](https://pub.dartlang.org/packages/angular2) package, which
+[**angular**](https://pub.dartlang.org/packages/angular) package, which
 (like many other Dart packages) is available via the Pub tool.
 
 You write Angular applications by composing HTML *templates* with Angularized markup,
@@ -95,17 +95,17 @@ By convention, the name of the root component is `AppComponent`.
 <img class="image-left" src="/resources/images/devguide/architecture/library-module.png" alt="Libraries" width="200px">
 
 Angular ships as a collection of libraries within the
-[**angular2**](https://pub.dartlang.org/packages/angular2) package.
-The main Angular library is [angular2](/angular/api), which most application modules import as follows:
+[**angular**](https://pub.dartlang.org/packages/angular) package.
+The main Angular library is [angular](/angular/api), which most application modules import as follows:
 
 <?code-excerpt "lib/app_component.dart (import)" class="guide-architecture-fix-overflow"?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 ```
 
-The angular2 package has other important libraries, such as
-[angular2.router](/angular/api/angular.router/angular.router-library) and
-[angular2.security](/angular/api/angular.security/angular.security-library).
+The angular package has other important libraries, such as
+[angular.router](/angular/api/angular.router/angular.router-library) and
+[angular.security](/angular/api/angular.security/angular.security-library).
 
 <div class="l-hr"></div>
 

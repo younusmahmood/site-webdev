@@ -590,7 +590,7 @@ Here's how you might begin:
 
 <?code-excerpt "lib/src/unless_directive.dart (skeleton)" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   @Directive(selector: '[myUnless]')
   class UnlessDirective {
@@ -670,7 +670,7 @@ The completed directive code looks like this:
 
 <?code-excerpt "lib/src/unless_directive.dart (excerpt)" region="no-docs" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   @Directive(selector: '[myUnless]')
   class UnlessDirective {

@@ -32,8 +32,8 @@ elif [[ -z "$NGIO_ENV_DEFS" || "$1" == "--reset" ]]; then
     export CEU_REPO
 
     # Git tag names
-    export NG_RELEASE=3.1.0
-    export NG_TEST_RELEASE=1.0.0-beta+3
+    export NG_RELEASE=4.0.0-alpha
+    export NG_TEST_RELEASE=1.0.0-beta+4
     export ACX_RELEASE=v0.5.3+1
 
     if [ ! $(type -t travis_fold) ]; then

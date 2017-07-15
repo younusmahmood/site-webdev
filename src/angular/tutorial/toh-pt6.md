@@ -34,7 +34,7 @@ You'll be using the Dart [http][] package's `BrowserClient` class to communicate
 
 Update package dependencies by adding the [stream_transform][] and Dart [http][] packages.
 
-You also need to add a `resolved_identifiers` entry, to inform the [angular2
+You also need to add a `resolved_identifiers` entry, to inform the [Angular
 transformer][ng2x] that the app will be using `BrowserClient`. (For an explanation of why
 this extra configuration is needed, see the [HTTP client page][guide-http].) You'll
 also need to use `Client` from http, so let's add that now as well.
@@ -52,12 +52,12 @@ Update `pubspec.yaml` to look like this (additions are highlighted):
   name: angular_tour_of_heroes
   # . . .
   dependencies:
-    angular2: ^3.1.0
+    angular: ^4.0.0-alpha
     http: ^0.11.0
     stream_transform: ^0.0.6
     # . . .
   transformers:
-  - angular2:
+  - angular:
       entry_points: web/main.dart
       resolved_identifiers:
           BrowserClient: 'package:http/browser_client.dart'
@@ -74,8 +74,7 @@ launch the application and its root `AppComponent`.
 
 <?code-excerpt "web/main.dart (v1)" title linenums?>
 ```
-  import 'package:angular2/angular2.dart';
-  import 'package:angular2/platform/browser.dart';
+  import 'package:angular/angular.dart';
   import 'package:angular_tour_of_heroes/app_component.dart';
   import 'package:http/browser_client.dart';
 
@@ -98,8 +97,7 @@ Update `web/main.dart` with this version, which uses the mock service:
 
 <?code-excerpt "web/main.dart (v2)" title linenums?>
 ```
-  import 'package:angular2/angular2.dart';
-  import 'package:angular2/platform/browser.dart';
+  import 'package:angular/angular.dart';
   import 'package:angular_tour_of_heroes/app_component.dart';
   import 'package:angular_tour_of_heroes/in_memory_data_service.dart';
   import 'package:http/http.dart';
@@ -127,7 +125,7 @@ implementations.
   import 'dart:convert';
   import 'dart:math';
 
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
   import 'package:http/http.dart';
   import 'package:http/testing.dart';
 
@@ -274,7 +272,7 @@ Update the import statements as follows:
   import 'dart:async';
   import 'dart:convert';
 
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
   import 'package:http/http.dart';
 
   import 'hero.dart';
@@ -582,7 +580,7 @@ Start by creating `HeroSearchService` that sends search queries to the server's 
   import 'dart:async';
   import 'dart:convert';
 
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
   import 'package:http/http.dart';
 
   import 'hero.dart';
@@ -674,8 +672,8 @@ Create the `HeroSearchComponent` class and metadata.
 ```
   import 'dart:async';
 
-  import 'package:angular2/angular2.dart';
-  import 'package:angular2/router.dart';
+  import 'package:angular/angular.dart';
+  import 'package:angular/router.dart';
   import 'package:stream_transform/stream_transform.dart';
 
   import 'hero_search_service.dart';

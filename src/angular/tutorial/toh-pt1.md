@@ -200,7 +200,7 @@ Here's the complete `app_component.dart` as it stands now:
 
 <?code-excerpt "lib/app_component.dart" title linenums?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   class Hero {
     final int id;

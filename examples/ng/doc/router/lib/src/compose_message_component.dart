@@ -2,8 +2,8 @@
 // #docregion
 import 'dart:async';
 
-import 'package:angular2/angular2.dart';
-import 'package:angular2/router.dart';
+import 'package:angular/angular.dart';
+import 'package:angular/router.dart';
 // import 'animations.dart' show slideInDownAnimation;
 
 @Component(

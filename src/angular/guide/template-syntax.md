@@ -1201,7 +1201,7 @@ It has a `size` value property and a companion `sizeChange` event:
 ```
   import 'dart:async';
   import 'dart:math';
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   const _minSize = 8;
   const _maxSize = _minSize * 5;
