@@ -7,6 +7,7 @@ import 'src/hero_service.dart';
 @Component(
   selector: 'my-app',
   // #enddocregion locally-provided-service
+  template: '...',
   /* ... */
   // #docregion locally-provided-service
   providers: const [HeroService],

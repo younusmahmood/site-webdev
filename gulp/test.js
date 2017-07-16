@@ -14,7 +14,8 @@ module.exports = function (gulp, plugins, config) {
   const runAngularTest = 'pub run angular_test'
     + ` --serve-arg=--web-compiler=${wc}`
     + ' --test-arg=--platform=content-shell --test-arg=--tags=aot'
-    + ' --test-arg=--reporter=expanded';
+    + ' --test-arg=--reporter=expanded'
+    + ' --verbose';
 
   const pathOfExamplesToTest = ('quickstart '
     + 'toh-0 toh-1 toh-2 toh-3 toh-4 toh-5 toh-6').split(' ')
