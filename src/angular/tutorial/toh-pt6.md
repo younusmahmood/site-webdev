@@ -52,7 +52,7 @@ Update `pubspec.yaml` to look like this (additions are highlighted):
   name: angular_tour_of_heroes
   # . . .
   dependencies:
-    angular: ^4.0.0-alpha
+    angular: ^4.0.0-alpha+1
     http: ^0.11.0
     stream_transform: ^0.0.6
     # . . .

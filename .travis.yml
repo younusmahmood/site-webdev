@@ -15,7 +15,8 @@ env:
     - CHROME_BIN=chromium-browser
     - JEKYLL_ENV=production
     # E2E: use --skip=t1|t2|...|tx to skip tests
-    - E2E_OPT="--fast"
+    # https://github.com/dart-lang/angular_components/issues/128
+    - E2E_OPT="--fast --skip=structural-directives|template-syntax"
   matrix:
     - CI_TASK=build DART_CHANNEL=stable
     - CI_TASK=test  DART_CHANNEL=stable

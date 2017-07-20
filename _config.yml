@@ -69,14 +69,14 @@ ng:
   vers:
     major: 4
     abbr: 4.0
-    full: 4.0.0-alpha
+    full: 4.0.0-alpha+1
   # dev:
   #   version: 4.0.0-alpha
 acx:
   vers:
-    major: 0.5
-    abbr: 0.5.3
-    full: 0.5.3+1
+    major: 0.6
+    abbr: 0.6.0
+    full: 0.6.0-alpha
   # dev:
   #   version: ???
     

@@ -11,16 +11,15 @@ module.exports = function (gulp, plugins, config) {
   const libsToDoc = {
     acx: `angular_components`,
     ng:
-     `angular.common
-      angular.compiler
+     `angular
       angular.core
       angular.platform.browser
       angular.platform.common
       angular.platform.common_dom
       angular.router
-      angular.security
-      angular.transform.deferred_rewriter.dart
-      angular.transformer_dart`.replace(/\s+/g, ','),
+      angular.security`.replace(/\s+/g, ','),
+      // angular.transform.deferred_rewriter.dart
+      // angular.transformer_dart
   };
 
   const repoPath = config.repoPath;
