@@ -15,7 +15,7 @@ env:
     - CHROME_BIN=chromium-browser
     - JEKYLL_ENV=production
     # E2E: use --skip=t1|t2|...|tx to skip tests
-    - E2E_OPT="--fast"
+    - E2E_OPT="--fast --skip=toh|template-syntax"
   matrix:
     - CI_TASK=build DART_CHANNEL=stable
     - CI_TASK=test  DART_CHANNEL=stable
