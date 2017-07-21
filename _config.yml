@@ -76,7 +76,7 @@ acx:
   vers:
     major: 0.6
     abbr: 0.6.0
-    full: 0.6.0-alpha
+    full: 0.6.0-alpha+1
   # dev:
   #   version: ???
     

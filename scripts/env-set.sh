@@ -34,7 +34,7 @@ elif [[ -z "$NGIO_ENV_DEFS" || "$1" == "--reset" ]]; then
     # Git tag names
     export NG_RELEASE=4.0.0-alpha+1
     export NG_TEST_RELEASE=1.0.0-beta+4
-    export ACX_RELEASE=v0.6.0-alpha
+    export ACX_RELEASE=v0.6.0-alpha+1
 
     if [ ! $(type -t travis_fold) ]; then
         # In case this is being run locally. Turn travis_fold into a noop.
