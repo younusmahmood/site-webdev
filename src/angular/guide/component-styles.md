@@ -265,7 +265,7 @@ on the [MDN](https://developer.mozilla.org) site.
 <div class="alert is-important" markdown="1">
   {%comment%}Uncomment text below once the fix is confirmed.{%endcomment%}
   CSS @imports cannot currently be used &mdash; see
-  [issue #39](https://github.com/dart-lang/angular2/issues/39).
+  [issue #39](https://github.com/dart-lang/angular/issues/39).
   It will be fixed in AngularDart 4.0.
 </div>
 
@@ -274,7 +274,7 @@ In *this* case the URL is relative to the CSS file into which we are importing.
 
 <div class="alert is-important" markdown="1">
   URLs are currently not interpreted in this way, see
-  [issue #39](https://github.com/dart-lang/angular2/issues/39).
+  [issue #39](https://github.com/dart-lang/angular/issues/39).
   Until this issue is fixed, absolute package-reference style URLs must
   be given, as illustrated below.
 </div>
@@ -282,7 +282,7 @@ In *this* case the URL is relative to the CSS file into which we are importing.
 <?code-excerpt "lib/src/hero_details_component.css (excerpt)" region="import" title?>
 ```
   /*
-  https://github.com/dart-lang/angular2/issues/39
+  https://github.com/dart-lang/angular/issues/39
   pub build fails on
     @ import 'hero_details_box.css';
   */

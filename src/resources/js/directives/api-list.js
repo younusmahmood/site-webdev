@@ -51,7 +51,7 @@ angularIO.directive('apiList', function () {
       '        {{section.title}}&nbsp;&nbsp' +
       '      </a>' +
       '      <span class="api-doc-code">' +
-      '        import&nbsp;\'package:angular2/{{section.title}}.dart\';' +
+      '        import&nbsp;\'package:angular/{{section.title}}.dart\';' +
       '      </span>' +
       '    </h2>' +
       '    <ul class="api-list">' +

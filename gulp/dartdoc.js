@@ -11,15 +11,15 @@ module.exports = function (gulp, plugins, config) {
   const libsToDoc = {
     acx: `angular_components`,
     ng:
-     `angular2
-      angular2.common
-      angular2.compiler
-      angular2.core
-      angular2.platform.browser
-      angular2.platform.common
-      angular2.platform.common_dom
-      angular2.router
-      angular2.security`.replace(/\s+/g, ','),
+     `angular.compiler
+      angular.core
+      angular.platform.browser
+      angular.platform.common
+      angular.platform.common_dom
+      angular.router
+      angular.security
+      angular.transform.deferred_rewriter.dart
+      angular.transformer_dart`.replace(/\s+/g, ','),
   };
 
   const repoPath = config.repoPath;
@@ -33,7 +33,7 @@ module.exports = function (gulp, plugins, config) {
   // Task: dartdoc
   // --dartdoc='all|none|acx|ng', default is 'all'.
   // --fast   skip prep and API doc generation if API docs already exist.
-  // --clean  removes angular2 doc/api (and so forces regeneration of docs; i.e. --fast is ignored)
+  // --clean  removes angular doc/api (and so forces regeneration of docs; i.e. --fast is ignored)
   gulp.task('dartdoc', _projs.map(p => `dartdoc-${p}`));
 
   config.dartdocProj.forEach(p => {
@@ -95,18 +95,18 @@ module.exports = function (gulp, plugins, config) {
 //     return true;
 //   }
 //   checkAngularProjectPath(ngRepoPath);
-//   const topLevelLibFilePath = path.resolve(ngRepoPath, 'lib', 'angular2.dart');
+//   const topLevelLibFilePath = path.resolve(ngRepoPath, 'lib', 'angular.dart');
 //   const tmpPath = topLevelLibFilePath + '.disabled';
 //   renameIfExistsSync(topLevelLibFilePath, tmpPath);
-//   gutil.log(`Hiding top-level angular2 library: ${topLevelLibFilePath}`);
+//   gutil.log(`Hiding top-level angular library: ${topLevelLibFilePath}`);
 //   // Remove dartdoc '--add-crossdart' flag while we are fixing links to API pages.
 //   const dartdoc = spawnExt('dartdoc', ['--output', relDartDocApiDir], { cwd: ngRepoPath});
 //   return dartdoc.promise.finally(() => {
-//       gutil.log(`Restoring top-level angular2 library: ${topLevelLibFilePath}`);
+//       gutil.log(`Restoring top-level angular library: ${topLevelLibFilePath}`);
 //       renameIfExistsSync(tmpPath, topLevelLibFilePath);
 //   })
 // });
 
 // return dartdoc.promise.finally(() => {
-//     gutil.log(`Restoring top-level angular2 library: ${topLevelLibFilePath}`);
+//     gutil.log(`Restoring top-level angular library: ${topLevelLibFilePath}`);
 //     renameIfExistsSync(tmpPath, topLevelLibFilePath);

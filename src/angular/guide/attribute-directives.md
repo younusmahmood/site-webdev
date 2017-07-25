@@ -62,7 +62,7 @@ Create the following source file in the indicated folder:
 
 <?code-excerpt "lib/src/highlight_directive_1.dart" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   @Directive(selector: '[myHighlight]')
   class HighlightDirective {
@@ -124,7 +124,7 @@ recognizes the directive when it encounters `myHighlight` in the template.
 
 <?code-excerpt "lib/app_component.dart" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   import 'src/highlight_directive.dart';
 
@@ -215,7 +215,7 @@ Here's the updated directive in full:
 
 <?code-excerpt "lib/src/highlight_directive_2.dart" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   @Directive(selector: '[myHighlight]')
   class HighlightDirective {
@@ -348,7 +348,7 @@ Here's the latest version of the directive class.
 
 <?code-excerpt "lib/src/highlight_directive_3.dart" title?>
 ```
-  import 'package:angular2/angular2.dart';
+  import 'package:angular/angular.dart';
 
   @Directive(selector: '[myHighlight]')
   class HighlightDirective {

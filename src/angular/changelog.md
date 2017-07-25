@@ -14,8 +14,8 @@ Also see:
 * [History of commits to AngularDart documentation](https://github.com/dart-lang/site-webdev/commits/master/src/angular)
 * [History of commits to AngularDart examples](https://github.com/dart-lang/site-webdev/commits/master/examples/ng/doc)
 * Package changelogs:
-  * [`angular2` changelog](https://pub.dartlang.org/packages/angular2#pub-pkg-tab-changelog)
-  * [`angular` changelog](https://pub.dartlang.org/packages/angular/versions/4.0.0-alpha%2B1#pub-pkg-tab-changelog)
+  * [`angular2` changelog][]
+  * [`angular` changelog][]
   * [`angular_components` changelog](https://pub.dartlang.org/packages/angular_components#pub-pkg-tab-changelog)
 
 
@@ -54,13 +54,13 @@ We also expect to remove references to `resolved_identifiers`.
 * Changed API doc URLs
   * The `angular2` &rarr; `angular` change affected API doc URLs. <br>
     Example:
-    [.../angular2/NgFor-class](/angular/api/angular2/NgFor-class)
+    .../angular2/NgFor-class
     &rarr;
-    [.../angular/NgFor-class](https://webdev-dartlang-org-dev.firebaseapp.com/angular/api/angular/NgFor-class)
+    [.../angular/NgFor-class](/angular/api/angular/NgFor-class)
 
 More information:
 
-* [`angular` changelog](https://pub.dartlang.org/packages/angular/versions/4.0.0-alpha%2B1#pub-pkg-tab-changelog)
+* [`angular` changelog][]
 * [History for site-webdev/examples/ng (4-dev branch)](https://github.com/dart-lang/site-webdev/commits/4-dev/examples/ng)
 * [4.0 prep tracking issue](https://github.com/dart-lang/site-webdev/issues/670)
 
@@ -72,8 +72,7 @@ We also fixed some bugs in the API doc homepage
 and added import information for each library.
 
 * `angular2.common` &rarr; `angular2` <br>
-  Example: .../angular2.common/NgFor-class &rarr;
-  [.../angular2/NgFor-class](/angular/api/angular2/NgFor-class)
+  Example: .../angular2.common/NgFor-class &rarr; .../angular2/NgFor-class
 * [The AngularDart API doc homepage](/angular/api)
   now shows an `import` statement next to each library's heading.
 
@@ -138,7 +137,7 @@ Common directive constants include `COMMON_DIRECTIVES`, `CORE_DIRECTIVES`,
 
 More information:
 
-* [`angular2` changelog](https://pub.dartlang.org/packages/angular2#pub-pkg-tab-changelog)
+* [`angular2` changelog][]
 * [PR #625](https://github.com/dart-lang/site-webdev/pull/625/files?w=1)
   (moves directive and pipe lists from pubspecs to components)
 
@@ -158,3 +157,5 @@ More information:
 * [PR #478](https://github.com/dart-lang/site-webdev/pull/478/files) (initial text and toh-0 tests)
 * [PR #567](https://github.com/dart-lang/site-webdev/pull/567/files?w=1) (toh-6 tests)
 
+[`angular` changelog]: https://pub.dartlang.org/packages/angular/versions/4.0.0-alpha%2B1#pub-pkg-tab-changelog
+[`angular2` changelog]: https://pub.dartlang.org/packages/angular2#pub-pkg-tab-changelog
