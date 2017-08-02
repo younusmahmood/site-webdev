@@ -11,10 +11,16 @@ header:
   css: ["/codelabs/ng2/darrrt.css"]
 ---
 
+{% comment %}
+update-for-dart-2
+{% endcomment %}
+
 In this step, you install any software that you need,
 and learn where to find the sample code.
 
 ## <i class="fa fa-anchor"> </i> Get Dart and Dartium.
+
+{% include dartium-2.0.html %}
 
 <div class="trydart-step-details" markdown="1">
 
